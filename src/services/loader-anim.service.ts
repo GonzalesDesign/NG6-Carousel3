@@ -1,3 +1,19 @@
+
+
+
+
+/***********************************************
+* Project: R.Lloyd Gonzales Portfolio Website
+* URL: RLGonzales.com
+* Contact: rolandolloyd@gmail.com
+* Copyright © 2018 GonzalesDesign
+* Platform: Angular 6
+* Service Name: LoaderAnimService
+* Note: Service for carousel3.component.ts
+        to run loader-svg.component.ts
+************************************************/
+
+
 import { Injectable } from '@angular/core';
 import { FunksionsService } from './funksions.service';
 import { TweenMax, TimelineMax, Power2, Power4, Elastic } from "gsap/TweenMax";
@@ -6,6 +22,8 @@ import { TweenMax, TimelineMax, Power2, Power4, Elastic } from "gsap/TweenMax";
   providedIn: 'root'
 })
 export class LoaderAnimService {
+
+  public tMx = TweenMax;
 
   // public circle: HTMLElement;
   public archSVG = '#svgArch-id';
@@ -39,24 +57,24 @@ export class LoaderAnimService {
   /* SVG loader animation */
   fArchSVG() {
     // dash
-    TweenMax.to(this.circ2, 0, {scale: 1, transformOrigin: '50% 50%'});
-    TweenMax.to(this.circ2, 2, {scale: .4, rotation: 360, transformOrigin: '50% 50%',
+    this.tMx.to(this.circ2, 0, {scale: 1, transformOrigin: '50% 50%'});
+    this.tMx.to(this.circ2, 2, {scale: .4, rotation: 360, transformOrigin: '50% 50%',
       // delay: .25,
       repeat: -1,
       repeatDelay: 1,
       yoyo: true,
       ease: Elastic.easeInOut});
 
-    TweenMax.to(this.circ4, 0, {scale: 1, transformOrigin: '50% 50%'});
-    TweenMax.to(this.circ4, 2, {scale: 1, rotation: -360, transformOrigin: '50% 50%',
+    this.tMx.to(this.circ4, 0, {scale: 1, transformOrigin: '50% 50%'});
+    this.tMx.to(this.circ4, 2, {scale: 1, rotation: -360, transformOrigin: '50% 50%',
       // delay: .25,
       repeat: -1,
       repeatDelay: 1,
       yoyo: true,
       ease: Elastic.easeOut});
 
-    TweenMax.to(this.circ5, 0, {rotation: 100, scale: 1, transformOrigin: '50% 50%'});
-    TweenMax.to(this.circ5, 3, {scale: 1, rotation: 720, transformOrigin: '50% 50%',
+    this.tMx.to(this.circ5, 0, {rotation: 100, scale: 1, transformOrigin: '50% 50%'});
+    this.tMx.to(this.circ5, 3, {scale: 1, rotation: 720, transformOrigin: '50% 50%',
       // delay: .25,
       repeat: -1,
       repeatDelay: 1,
@@ -64,21 +82,21 @@ export class LoaderAnimService {
       ease: Elastic.easeInOut});
 
     // dash
-    TweenMax.to(this.circ6, 4, {scale: 1, rotation: 360, transformOrigin: '50% 50%',
+    this.tMx.to(this.circ6, 4, {scale: 1, rotation: 360, transformOrigin: '50% 50%',
       // delay: .25,
       repeat: -1,
       // repeatDelay: 1,
       // yoyo: true,
       ease: Power2.easeInOut});
 
-    TweenMax.to(this.circ7, 2, {scale: 1, rotation: 720, transformOrigin: '50% 50%',
+    this.tMx.to(this.circ7, 2, {scale: 1, rotation: 720, transformOrigin: '50% 50%',
       // delay: .25,
       repeat: -1,
       repeatDelay: 1,
       yoyo: true,
       ease: Elastic.easeInOut});
 
-    TweenMax.to(this.circ8, 2, {scale: 1, rotation: 720, transformOrigin: '50% 50%',
+    this.tMx.to(this.circ8, 2, {scale: 1, rotation: 720, transformOrigin: '50% 50%',
       // delay: .25,
       repeat: -1,
       repeatDelay: 1,

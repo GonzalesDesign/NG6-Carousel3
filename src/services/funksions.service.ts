@@ -189,7 +189,7 @@ import { TweenMax, TimelineMax, TweenLite, Power2, Power4, Elastic } from "gsap/
   fLoadTimer(el, tym) {
     const Cont = {val: 0};
     const NewVal = 100 ;
-    console.log('el: ', el);
+    // console.log('el: ', el);
     TweenMax.to(Cont, tym, {val: NewVal, roundProps: 'val', onUpdate: function() {
       document.querySelector(el).innerHTML = Cont.val + '%';
     // el.innerHTML = 'Cont.val';
