@@ -1,0 +1,154 @@
+[
+    {
+      "id": 0,
+      "imageUrl": "../../assets/CharacterDesigns/photo0.jpg",
+      "imageName": "Character Design 0",
+      "orientation": "portrait",
+      "description":
+        "<b style='color:red;'>In Ancient China</b> they invented the umbrella.The umbrella was first invented in 3500 B.C. This Ancient Chinese invention was used to keep them from soaking wet when it rained. The Chinese used the umbrella to protect themselves from the sun rays. This invention was made by bamboo and oil paper because oil repels water. Umbrella can be used offensively as a weapon, or its shaft can effectively hide a secret blade."
+    },
+    {
+      "id": 1,
+      "imageUrl": "../../assets/CharacterDesigns/photo1.jpg",
+      "imageName": "Character Design 1",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 2,
+      "imageUrl": "../../assets/CharacterDesigns/photo2.jpg",
+      "imageName": "Character Design 2",
+      "orientation": "landscape",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 3,
+      "imageUrl": "../../assets/CharacterDesigns/photo3.jpg",
+      "imageName": "Character Design 3",
+      "orientation": "portrait",
+      "description":
+        "In China, successful men often had concubines until the practice was outlawed after the Communist Party of China came to power in 1949. The standard Chinese term translated as 'concubine' was qiè 妾, a term used since ancient times, which means 'female slave'. Concubines resembled wives (Chinese: 妻; pinyin: qī) in that they were recognized sexual partners of a male family member and were expected to bear children from him. Unofficial concubines (Chinese: 婢妾; pinyin: bì qiè) are of lower status, and children of her are considered illegitimate. In English the term concubine is also used for what the Chinese refer to as pínfēi (Chinese: 嬪妃) 'consorts of emperors', some of very high rank."
+    },
+    {
+      "id": 4,
+      "imageUrl": "../../assets/CharacterDesigns/photo4.jpg",
+      "imageName": "Character Design 4",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 5,
+      "imageUrl": "../../assets/CharacterDesigns/photo5.jpg",
+      "imageName": "Character Design 5",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 6,
+      "imageUrl": "../../assets/CharacterDesigns/photo6.jpg",
+      "imageName": "Character Design 6",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 7,
+      "imageUrl": "../../assets/CharacterDesigns/photo7.jpg",
+      "imageName": "Character Design 7",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 8,
+      "imageUrl": "../../assets/CharacterDesigns/photo8.jpg",
+      "imageName": "Character Design 8",
+      "orientation": "portrait",
+      "description":
+        "In Ancient China they invented the umbrella.The umbrella was first invented in 3500 B.C. This Ancient Chinese invention was used to keep them from soaking wet when it rained. The Chinese used the umbrella to protect themselves from the sun rays. This invention was made by bamboo and oil paper because oil repels water. Umbrella can be used offensively as a weapon, or its shaft can effectively hide a secret blade."
+    },
+    {
+      "id": 9,
+      "imageUrl": "../../assets/CharacterDesigns/photo9.jpg",
+      "imageName": "Character Design 9",
+      "orientation": "portrait",
+      "description":
+        "In Ancient China they invented the umbrella.The umbrella was first invented in 3500 B.C. This Ancient Chinese invention was used to keep them from soaking wet when it rained. The Chinese used the umbrella to protect themselves from the sun rays. This invention was made by bamboo and oil paper because oil repels water. Umbrella can be used offensively as a weapon, or its shaft can effectively hide a secret blade."
+    },
+    {
+      "id": 10,
+      "imageUrl": "../../assets/CharacterDesigns/photo10.jpg",
+      "imageName": "Character Design 10",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 11,
+      "imageUrl": "../../assets/CharacterDesigns/photo11.jpg",
+      "imageName": "Character Design 11",
+      "orientation": "landscape",
+      "description":
+        "Fenghuang (simplified Chinese: 凤凰; traditional Chinese: 鳳凰; pinyin: fènghuáng; Wade–Giles: fêng⁴-huang²) are mythological birds of East Asia that reign over all other birds. The males were originally called feng and the females huang but such a distinction of gender is often no longer made and they are blurred into a single feminine entity so that the bird can be paired with the Chinese dragon, which is traditionally deemed male."
+    },
+    {
+      "id": 12,
+      "imageUrl": "../../assets/CharacterDesigns/photo12.jpg",
+      "imageName": "Character Design 12",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 13,
+      "imageUrl": "../../assets/CharacterDesigns/photo13.jpg",
+      "imageName": "Character Design 13",
+      "orientation": "portrait",
+      "description":
+        "Historical accounts suggest that opium first arrived in China during the Tang dynasty (618–907) as part of the merchandise of Arab traders.[11] Later on, Song Dynasty (960–1279) poet and pharmacologist Su Dongpo recorded the use of opium as a medicinal herb: Daoists often persuade you to drink the jisu water, but even a child can prepare the yingsu[A] soup. <br/> Initially used by medical practitioners to control bodily fluid and preserve qi or vital force, during the Ming dynasty (1368–1644), the drug also functioned as an aphrodisiac or chunyao (春药) as Xu Boling records in his mid-fifteenth century Yingjing Juan: <br /> It is mainly used to treat masculinity, strengthen sperm, and regain vigour. It enhances the art of alchemists, sex and court ladies. Frequent use helps to cure the chronic diarrhea that causes the loss of energy ... Its price equals that of gold."
+    },
+    {
+      "id": 14,
+      "imageUrl": "../../assets/CharacterDesigns/photo14.jpg",
+      "imageName": "Character Design 14",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 15,
+      "imageUrl": "../../assets/CharacterDesigns/photo15.jpg",
+      "imageName": "Character Design 15",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 16,
+      "imageUrl": "../../assets/CharacterDesigns/photo16.jpg",
+      "imageName": "Character Design 16",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 17,
+      "imageUrl": "../../assets/CharacterDesigns/photo17.jpg",
+      "imageName": "Character Design 17",
+      "orientation": "portrait",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 18,
+      "imageUrl": "../../assets/CharacterDesigns/photo18.jpg",
+      "imageName": "Character Design 18",
+      "orientation": "portrait",
+      "description":
+        "In ancient China, a woman was required to obey her father before marriage, her husband during marriage, and her sons in widowhood. Basically, women were regarded as little more than bondservants. Things started to change during the peak of the Tang Dynasty, when women were granted basic rights and freedoms. <br /> This is the story of the woman who helped overthrow the tyrannical emperor Yang of Sui, and who helped found the early Tang Dynasty. Her name was Princess Pingyang."
+    }
+  ]

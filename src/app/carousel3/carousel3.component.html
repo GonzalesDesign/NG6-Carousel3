@@ -1,0 +1,111 @@
+<!-- HEADER -->
+<div id="top-bar-id" class="top-bar rlg-secondary-bg-color"></div>
+<hr>
+
+<div class="rlg-component-label">
+  <h2 class="rlg-header-font rlg-primary-color rlg-primary-title">RLG CAROUSEL 3</h2>
+  <!-- <h2 class="mdc-image-list mdc-image-list - -masonry my-masonry-image-list rlg-primary-font rlg-primary-color">MASONRY</h2> -->
+  <p #templateVar id="rlg-paragraph-id" class="rlg-primary-font rlg-paragraph rlg-secondary-color">NG6 + RLG: Carousel 3</p>
+</div>
+
+<hr>
+
+
+<!-- Loader component -->
+<app-loader-svg></app-loader-svg>
+
+<!-- CAROUSEL 3 -->
+<div id="main-kontainer-id" class="main-kontainer"
+  [style.height.vh]='fotoHeight'>
+  <!-- [style.width.px]= "mainContainerWidth"> || fElementWidth(...) -->
+  <ul id="rlg-image-kontainer-id" class="rlg-image-kontainer">
+    <!-- [style.width.px]= "imgKontainerWidth"> || fElementWidth(...) -->
+    <!-- <li class="image" *ngFor="let photo of photos | async; let i = index"> -->
+    <li class="image" *ngFor="let photo of photos; let i = index">
+      <div class="image-name-kontainer"
+        [style.width.px]='fotoWidth'>
+        <span class="image-name
+                     rlg-header-font
+                     rlg-typography-caps
+                     rlg-font-white-shadow
+                     rlg-secondary-mid-color">{{photo.imageName}}</span>
+      </div>
+      <div id=foto{{i}} class="foto"
+        [style.backgroundImage]="'url('+ photo.imageUrl +')'"
+        [style.background-repeat]="'no-repeat'"
+        [style.backgroundPositionX.%]="50"
+        [style.backgroundPositionY.%]="0"
+        [style.width.px]='fotoWidth'
+        [style.height.vh]='fotoHeight'
+        [style.backgroundSize]="'cover'">
+        <!--
+        [style.height.vh]="90"
+        [style.height.vh]="70"
+        [style.width.%]="100"
+        [style.width.px]="500"
+        [style.height.px]="500"
+        -->
+      </div>
+    </li>
+  </ul>
+
+  <!-- <button mdc-button [raised]=true (click)="fArrLength()">TEST</button> -->
+  <div id="arrow-buttons-kontainer-id" class="arrow-buttons-kontainer">
+
+      <div id="left-button-kontainer-id" class="left-button-kontainer">
+        <button mdcIconButton class="rlg-arrowIcon
+                                     rlg-left-arrow
+                                     rlg-font-dark-shadow
+                                     rlg-primary-mid-color"
+                                     (click)="fSlideRight()"
+                                     (mouseover)="hideTextLabelLeft=false"
+                                     (mouseleave)="hideTextLabelLeft=true">
+                                     arrow_back_ios
+        </button>
+        <span class="left-button-text
+                     rlg-primary-font
+                     rlg-font-mid-shadow"
+                     [ngStyle]="{opacity: hideTextLabelLeft==false  ? '1' : '0' }">
+                     PREVIOUS
+        </span>
+      </div>
+
+      <div id="right-button-kontainer-id" class="right-button-kontainer">
+        <button mdcIconButton class="rlg-arrowIcon
+                                     rlg-right-arrow
+                                     rlg-font-dark-shadow
+                                     rlg-primary-mid-color"
+                                     (click)="fSlideLeft()"
+                                     (mouseover)="hideTextLabelRight=false"
+                                     (mouseleave)="hideTextLabelRight=true">
+                                     arrow_forward_ios
+        </button>
+        <span class="right-button-text
+                     rlg-primary-font
+                     rlg-font-mid-shadow"
+                     [ngStyle]="{opacity: hideTextLabelRight==false  ? '1' : '0' }">
+                     NEXT
+        </span>
+      </div>
+
+    </div>
+
+</div>
+
+<!-- <div id="arrow-buttons-kontainer-id" class="arrow-buttons-kontainer">
+
+  <div id="left-button-kontainer-id" class="left-button-kontainer">
+    <button mdcIconButton class="rlg-arrowIcon rlg-left-arrow rlg-font-dark-shadow" (click)="fSlideRight()" (mouseover)="hideTextLabelLeft=false" (mouseleave)="hideTextLabelLeft=true">arrow_back_ios
+    </button>
+    <span class="left-button-text rlg-primary-font rlg-font-dark-shadow" [ngStyle]="{opacity: hideTextLabelLeft==false  ? '1' : '0' }">PREVIOUS
+    </span>
+  </div>
+
+  <div id="right-button-kontainer-id" class="right-button-kontainer">
+    <button mdcIconButton class="rlg-arrowIcon rlg-right-arrow rlg-font-shadow1" (click)="fSlideLeft()" (mouseover)="hideTextLabelRight=false" (mouseleave)="hideTextLabelRight=true">arrow_forward_ios
+    </button>
+    <span class="right-button-text rlg-primary-font rlg-font-dark-shadow" [ngStyle]="{opacity: hideTextLabelRight==false  ? '1' : '0' }">NEXT
+    </span>
+  </div>
+
+</div> -->

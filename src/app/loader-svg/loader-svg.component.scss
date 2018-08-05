@@ -1,0 +1,86 @@
+
+
+/*--- Import: Project's Theme Styling ---*/
+@import "./../../theme.scss";
+
+$borderForTesting: 0px solid rgb(243, 42, 243);
+
+.loading-kontainer {
+        // color: black;
+        display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // align-content: center;
+        justify-content: center;
+        position: absolute;
+        // top: 100vh/2;
+        margin: auto;
+        width: 100vw;
+        height: 50vh;
+        // background-color: rgba(yellowgreen, 0.15);
+        border: $borderForTesting;
+
+          #twoArches {
+            // display: flex;
+            // justify-content: center;
+            align-self: center;
+            position: absolute;
+            width: 80%;
+            height: 50%;
+            // border: 4px solid red;
+            // top: 50px;
+            overflow: visible;
+
+            /* .st0 {
+              stroke:$rlgColorPrimaryMid;
+            };
+            .st1 {
+              stroke:$rlgColorSecondaryMid;
+            };
+            .st1b {
+              stroke:$rlgColorTertiaryMid;
+            }; */
+          }
+
+          #svgArches {
+                align-self: center;
+                position: absolute;
+                width: 80%;
+                height: 50%;
+                // border: 4px solid red;
+                // top: 50px;
+                overflow: visible;
+          }
+
+        .loading {
+          // align-items: center;
+          // justify-content: center;
+          align-self: center;
+          position: absolute;
+          // top: 50%;
+          font-size: 1em;
+          text-align: center;
+          // margin: auto;
+          // width: 100%;
+          // height: 10vh;
+          color: $rlgColorDarkMid;
+          border: $borderForTesting;
+
+          /* #cyanLine {
+            width: 200px;
+            height: 200px;
+            border: 4px solid $secondaryColor;
+          }
+          .st0 {
+            border: 1px solid $secondaryColor;
+          }
+          #redLine {
+            border: 1px solid $secondaryColor;
+          } */
+        }
+
+        #svgArch-id {
+          border: 1px solid $secondaryColor;
+        }
+
+      }

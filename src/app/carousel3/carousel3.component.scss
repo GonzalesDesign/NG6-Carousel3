@@ -1,0 +1,287 @@
+/******************************************************
+* Project: R.Lloyd Gonzales Portfolio Website
+* URL: RLGonzales.com
+* Contact: rolandolloyd@gmail.com
+* Copyright © 2018 GonzalesDesign
+* Platform: Angular 6
+* Component: Carousel3
+* Note: Component scoped styling.
+        There are 2 main theme colors, primary and
+        secondary and shades of them.
+        Additionally, greys of different values
+        can be used as backup colors.
+******************************************************/
+
+/*--- Import: Project's Theme Styling ---*/
+@import "./../../theme.scss";
+
+.top-bar {
+  width: 100vw;
+  height: 10px;
+  margin: 0;
+}
+
+$next-previous-color: white;
+$next-previous-background-color: $material-color-grey-500; // $mdc-theme-secondary;
+$borderForTesting: 0px solid rgb(243, 42, 243);
+
+$image-kontainer-width: 250px;
+// $image-kontainer-height: 90vh;
+
+// @mixin styling($image-kontainer-width, $image-kontainer-height) {
+// @mixin styling($image-kontainer-height) {
+.screenwidth {
+  width: 100%;
+  height: 1em;
+  background-color: plum;
+  margin-bottom: 1em;
+}
+
+.rlg-component-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  border: $borderForTesting;
+}
+.main-kontainer {
+  margin-left: $rlg-kontainer-margin;
+  margin-right: $rlg-kontainer-margin;
+  //   width: ($image-kontainer-width * 3);
+  //   height: 500px; // 100%;
+  // height: $image-kontainer-height;;
+  border: 0px solid rgb(255, 0, 200);
+  // background-color: rgba(9, 194, 240, 0.925);
+  overflow: hidden;
+}
+
+#dynamic-loading-kontainer-id {
+  // width: 800px;
+  // height: 200px;
+  background-color: brown;
+}
+/* svg stuff:
+.loading-kontainer {
+  // color: black;
+  display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // align-content: center;
+  justify-content: center;
+  position: absolute;
+  // top: 100vh/2;
+  margin: auto;
+  width: 100vw;
+  height: 50vh;
+  // background-color: rgba(yellowgreen, 0.15);
+  border: $borderForTesting;
+
+    #twoArches {
+      // display: flex;
+      // justify-content: center;
+      align-self: center;
+      position: absolute;
+      width: 80%;
+      height: 50%;
+      // border: 4px solid red;
+      // top: 50px;
+      overflow: visible;
+
+      .st0 {
+        stroke:$rlgColorPrimaryMid;
+      };
+      .st1 {
+        stroke:$rlgColorSecondaryMid;
+      };
+      .st1b {
+        stroke:$rlgColorTertiaryMid;
+      };
+    }
+
+  .loading {
+    // align-items: center;
+    // justify-content: center;
+    align-self: center;
+    position: absolute;
+    // top: 50%;
+    font-size: 1em;
+    text-align: center;
+    // margin: auto;
+    // width: 100%;
+    // height: 10vh;
+    color: $rlgColorDarkMid;
+    border: $borderForTesting;
+
+    #cyanLine {
+      width: 200px;
+      height: 200px;
+      border: 4px solid $secondaryColor;
+    }
+    .st0 {
+      border: 1px solid $secondaryColor;
+    }
+    #redLine {
+      border: 1px solid $secondaryColor;
+    }
+  }
+
+  #svgArch-id {
+    border: 1px solid $secondaryColor;
+  }
+
+
+
+  #myCanvas {
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    // align-items: center;
+    // justify-content: center;
+    position: absolute;
+    // height: 50vh; // 300px;
+    // width: 100vw; // 600px;
+    // left: 0%;
+    border: 2px solid $secondaryColor;
+    // border-radius:50px;
+  }
+} */
+
+// li {
+
+#rlg-image-kontainer-id {
+  margin-top: 0;
+  padding: 0;
+  // width: ($image-kontainer-width * $image-num);
+  background-color: rgba(yellowgreen, 0.5);
+  .foto {
+    // background-size: cover;
+  }
+  .image {
+    display: inline-block;
+    list-style: none;
+    //   width: $image-kontainer-width;
+    // height: $image-kontainer-height;
+  }
+  .image-name-kontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    // background-color: rgba($mdc-theme-secondary, 0.5);
+    border: $borderForTesting;
+
+    .image-name {
+      font-size: 1.2em;
+      // color: $material-color-grey-400;
+      border: $borderForTesting;
+    }
+  }
+}
+// #arrow-buttons-kontainer-id {
+//     position: absolute;
+// }
+.arrow-buttons-kontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // justify-content: center;
+  // align-self: center;
+  // margin: 28px;
+  // padding-left: 28px;
+  // padding-right: 28px;
+  position: absolute;
+  // left: 28px;
+  // width: ($image-kontainer-width * 3); //???
+  height: 100px;
+  // padding: 20px;
+  // top: -($image-kontainer-height / 2);
+  // background-color: aquamarine;
+  border: $borderForTesting;
+  // z-index: 100;
+
+  .left-button-kontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //   justify-content: flex-start;
+    position: relative;
+    // left: 28px;
+    margin-left: 28px;
+    width: 200px;
+    height: 90px;
+    // background-color: $next-previous-background-color;
+    border: $borderForTesting;
+
+    .rlg-left-arrow {
+      // justify-content: flex-start;
+      position: absolute;
+      left: 25px;
+      border: $borderForTesting;
+    }
+
+    .left-button-text {
+      position: absolute;
+      color: $next-previous-color;
+      width: 100px;
+      height: 20px;
+      top: 28px;
+      left: 72px;
+      text-align: left;
+      padding: 0.4em;
+      padding-left: 1em;
+      background-color: rgba($rlgColorTertiaryMid, .75);
+      border: $borderForTesting;
+    }
+  }
+  .right-button-kontainer {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: flex-end;
+    position: absolute;
+    // left: (($image-kontainer-width * 3) - 400);
+    width: 200px;
+    height: 90px;
+    // margin-right: 28px;
+    // background-color: $next-previous-background-color;
+    border: $borderForTesting;
+
+    .rlg-right-arrow {
+      // justify-content: flex-start;
+      position: absolute;
+      // margin-right: 25px;
+      left: 120px;
+      border: $borderForTesting;
+    }
+
+    .right-button-text {
+      position: absolute;
+      color: $next-previous-color;
+      width: 100px;
+      height: 20px;
+      top: 30px;
+      left: 10px;
+      text-align: right;
+      // margin-right: 365px;
+      padding: 0.4em;
+      padding-right: 1em;
+      background-color: rgba($rlgColorTertiaryMid, .75);
+      border: $borderForTesting;
+    }
+  }
+  .rlg-arrowIcon {
+    //   align-self: flex-start;
+    //   position: absolute;
+    font-size: 3em;
+    width: 1em;
+    height: 2em;
+    //   z-index: 100;
+    //   overflow: hidden;
+    // color: $next-previous-color;
+    border: 0px solid yellowgreen;
+  }
+}

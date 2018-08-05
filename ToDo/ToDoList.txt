@@ -1,0 +1,12 @@
+Things to try out
+
+        SVG Loader:
+                Create svg in JS, duplicate and animate using gsap
+                Use setTimeout to show loader animation for time visitors.
+                        JS onLoad and document.readyState;
+
+
+        Change animation engine from AnimeJS to GSAP : Done, Aug 4,2018
+
+
+        Clean up code!

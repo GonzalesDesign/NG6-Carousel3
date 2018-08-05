@@ -1,0 +1,64 @@
+Codes that's been stripped out of the working components and view files
+
+From loader-anim.service.ts
+/*-- Create a Canvas arch --*/
+  fCanvasSize(e) {
+    e.width = window.innerWidth;
+    e.height = window.innerHeight;
+  }
+  fArch(thickness) {
+    const canvas = <HTMLCanvasElement> document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    this.fCanvasSize(canvas);
+
+      for ( let i = 0; i < 12; i++ ) {
+        // const randX = Math.random() * 300;
+        // const randY = Math.random() * 300;
+        const size = 150 - (i * 10); // Math.floor(Math.random() * 50) + 20;
+        const start: any = (Math.random() * 2 + 0).toFixed(2); // toFixed() converts number to string!?
+        // const randStart = parseInt(start, 16); // parseInt("1.5", 10 is radix);
+        // const end = Math.floor(Math.random() * 2) + 0;
+        const end: any = (Math.random() * 2 + 0).toFixed(2);
+        // const randEnd = parseInt(end, 10);
+        console.log('start | end: ', start, ' | ', end);
+        // console.log('randStart | randEnd: ', randStart, ' | ', randEnd);
+        const randRed = Math.random() * 255;
+        const randGreen = Math.random() * 255;
+        const randBlue = Math.random() * 255;
+        ctx.beginPath();
+        ctx.lineWidth = thickness;
+        ctx.arc(400, 375, size, start, end * Math.PI, false);
+        ctx.strokeStyle = 'rgba(' + randRed + ',' + randGreen + ',' + randBlue + ',' + '.75)';
+        ctx.stroke();
+      }
+  }
+
+  /*-- Getting the image orientation from json --*/
+        /* data.forEach(eachObj => {
+          this.imgOrientation = eachObj.orientation;
+          console.log('this.imgOrientation: ', eachObj.id, ' ', this.imgOrientation);
+        }); */
+        this._funksions.fImgOrientation(data, this.imgOrientation);
+
+From funksions.service.ts
+        /*- Checking images orientation ----*/
+        /*- Checking images orientation ----*/
+        fImgOrientation(d, val) {
+        d.forEach(eachObj => {
+        val = eachObj.orientation;
+        // console.log('val: ', eachObj.id, ' ', val);
+        });
+        }
+
+/*-- Create SVG as service --*/
+From carousel3.component.html
+        <div id="dynamic-loading-kontainer-id"></div>
+        <svg>
+        <path id="arc1" fill="none" stroke="#446688" stroke-width="10" />
+        </svg>
+From carousel3.component.ts
+        public dynLoadngKontainerId = '#dynamic-loading-kontainer-id';
+        this._createSVG.fReadyState(this.dynLoadngKontainerId);
+From create-svg.service.ts
+        This service provides the build
+

@@ -1,0 +1,74 @@
+
+
+
+/*--- Import: General styling ---*/
+@import './styles.scss';
+
+
+$rlg-theme-secondary-200: $material-color-deep-orange-200;
+$rlg-theme-secondary-500: $material-color-deep-orange-500;
+
+$rlg-kontainer-margin: 0px; // 28px;
+
+/*----- Miscellaneous Styling -----*/
+// .rlg-component-label {
+//     margin: $rlg-kontainer-margin;
+// }
+.rlg-typography-caps {
+    text-transform: uppercase;
+}
+.rlg-primary-font {
+    font-family: $rlg-primary-font;
+}
+.rlg-header-font {
+    font-family: $rlg-header-font;
+}
+.rlg-round-font {
+    font-family: $rlg-round-font;
+}
+.rlg-primary-color {
+    color: $primaryColor;
+}
+.rlg-primary-mid-color {
+    color: $rlgColorPrimaryMid;
+}
+.rlg-primary-title {
+    font-size: 1.8em;
+    font-kerning: .5em;
+    margin: 0 auto;
+    padding: 0;
+}
+.rlg-paragraph {
+    margin: 0 auto;
+    padding: 0;
+}
+.rlg-secondary-color {
+    color: $secondaryColor;
+}
+.rlg-secondary-mid-color {
+    color: $rlgColorSecondaryMid;
+}
+.rlg-secondary-bg-color {
+    background-color: $secondaryColor;
+}
+.rlg-tertiary-bg-mid-color {
+    background-color: $rlgColorTertiaryMid;
+}
+.rlg-font-dark-shadow {
+    text-shadow: $text-dark-shadow;
+}
+.rlg-font-mid-shadow {
+    text-shadow: $text-mid-shadow;
+}
+.rlg-font-light-shadow {
+    text-shadow: $text-light-shadow;
+}
+.rlg-font-white-shadow {
+    // text-shadow: 1px 1px 1px white;
+    text-shadow: $text-white-shadow;
+}
+
+/*-- Background color for the arrow button's circular bg --*/
+.mdc-icon-button::before, .mdc-icon-button::after {
+    background-color: $rlgColorSecondary;
+}
