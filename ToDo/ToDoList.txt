@@ -1,8 +1,8 @@
 Things to try out
 
         SVG Loader:
-                Create svg in JS, duplicate and animate using gsap
-                Use setTimeout to show loader animation for time visitors.
+                Create svg in JS, duplicate and animate using gsap. Created loader component instead, works better!
+                Use setTimeout to show loader animation for first time visitors.
                         JS onLoad and document.readyState;
 
 
