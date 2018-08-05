@@ -1,15 +1,15 @@
 
 
 
-/***********************************************
+/***************************************************
 * Project: R.Lloyd Gonzales Portfolio Website
 * URL: RLGonzales.com
 * Contact: rolandolloyd@gmail.com
 * Copyright © 2018 GonzalesDesign
 * Platform: Angular 6
 * Component Name: Carousel3Component
-* Note: Carousel3 uses a service and Observable
-************************************************/
+* Note: Update animation engine to GSAP from AnimeJS
+****************************************************/
 
 
 import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
@@ -22,7 +22,7 @@ import { LoaderAnimService } from './../../services/loader-anim.service';
 import viewportSize from 'viewport-size/viewportSize';
 // import { TweenMax, TimelineMax } from 'gsap';
 import { Power2, Elastic } from "gsap/TweenMax";
-import { CreateSvgService } from '../../services/create-svg.service';
+// import { CreateSvgService } from '../../services/create-svg.service';
 
 @Component({
   selector: 'app-carousel3',
@@ -47,7 +47,7 @@ export class Carousel3Component implements OnInit, AfterViewInit {
   public loading = '.loading';
   public loadingKontainer = '.loading-kontainer';
   // public loadingKontainerId = 'loading-kontainer-id';
-  public loadingProp = 'LOADING...';
+  // public loadingProp = 'LOADING...';
   public timeout = 5000;
   public topbarId = '#top-bar-id';
   public componentLabel = '.rlg-component-label';
@@ -55,8 +55,8 @@ export class Carousel3Component implements OnInit, AfterViewInit {
   // public dynLoadngKontainerId = '#dynamic-loading-kontainer-id';
   // public imgCount = 3;
   // public i = 0;
-  public imgOrientation: string;
-  public circle: HTMLElement;
+  // public imgOrientation: string;
+  // public circle: HTMLElement;
 
 
   public screenWidth: number = window.innerWidth;
@@ -189,6 +189,8 @@ export class Carousel3Component implements OnInit, AfterViewInit {
   } */
 
 
+  /**********---== RESPONSIVENESS ==---**********/
+
   /*---- Viewport Resize ----*/
   @HostListener('window:resize', ['$event'])
   // @HostListener(this._windowRef._window(), ['$event'])
@@ -196,7 +198,9 @@ export class Carousel3Component implements OnInit, AfterViewInit {
     this.resizeMe();
   }
 
-  /*---- Screen Resize ----*/
+  /*---- Screen Resize: Media Queries
+   * Note: Next and Previous events work with commonCounter ----*/
+
   public resizeMe() {
     // console.log('resizeMe:------------------------');
 

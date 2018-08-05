@@ -1,4 +1,4 @@
-import { Injectable, Renderer2, ElementRef } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { FunksionsService } from './funksions.service';
 import { TweenMax, TimelineMax, Power2, Power4, Elastic } from "gsap/TweenMax";
 
@@ -18,24 +18,23 @@ export class LoaderAnimService {
 
   constructor(private _funksions: FunksionsService) { }
 
-  fCreateCircle(parentEl) {
+  /* fCreateCircle(parentEl) {
     const e = document.createElement('div');
     e.id = 'circle';
-
     const parent = document.getElementById(parentEl);
     parent.appendChild(e);
     // this.fCircleStyling(e, 3);
     console.log(e, ' | ', parent);
     console.log('tagName: ', e.tagName, ' |  id:', e.id);
     console.log('parent tagName: ', parent.tagName, ' |  id:', parent.id);
-  }
+  } */
 
-  fCircleStyling(e, thickness) {
+  /* fCircleStyling(e, thickness) {
     const x = document.querySelector(e), s = x.style;
     s.border = thickness + 'px' + 'solid' + 'yellow';
     s.color = 'rgba(120, 120, 120, .5)';
     console.log('x: ', x);
-  }
+  } */
 
   /* SVG loader animation */
   fArchSVG() {
